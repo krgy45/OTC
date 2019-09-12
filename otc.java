@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question4{
+public class OTC{
   public static void main(String[] args){
     //Variable initialization
     Scanner in = new Scanner(System.in);
