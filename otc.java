@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class OTC{
+public class Question4{
   public static void main(String[] args){
     //Variable initialization
     Scanner in = new Scanner(System.in);
@@ -31,7 +31,8 @@ public class OTC{
             break;
             
         case "/":
-            System.out.println("The result of " + operand_1 + " " + operator + " " + operand_2 + " is " + (operand_1 / operand_2) + " with remainder " + (operand_1 % operand_2));
+            if(operand_2 == 0) System.out.println("Sorry, division by zero is currently unsupported. Feel free to create an issue @ https://github.com/krgy45/OTC/issues to ask for functionality extension!");
+            else System.out.println("The result of " + operand_1 + " " + operator + " " + operand_2 + " is " + (operand_1 / operand_2) + " with remainder " + (operand_1 % operand_2));
             break;
             
         default:
